@@ -3,13 +3,22 @@
 
   <head>
     <meta charset="utf-8">
-    <meta  name="viewport" content="width=device-width, initial-scale-1">
+    <meta  name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Api Pokedex</title>
   </head>
 
   <body>
-    {% block content %} {% endblock %}
+
+    <div class="container">
+      <h1 class="text-primary">POKEDEX</h1>
+      {% block content %} {% endblock %}
+      <hr>
+      <div class="text-center">
+        Little Pokédex
+      </div>
+    </div>
+
   </body>
 
 </html>

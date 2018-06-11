@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+  <h2>Pokémons</h2>
+
+    <div class="card text-center">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+          <h5 class="card-title">{{pokemon.name}}<small>: Pokémon n° {{pokemon.number}}</small></h5>
+          <p class="card-text">{{pokemon.description}}</p>
+      </div>
+      <div class="card-footer text-muted">
+        <h5>Pokémon type:</h5>
+        {% for t in pokemon.types %}
+        <span class="label label-default">{{t.name}}</span>
+        {% endfor %}
+      </div>
+    </div>
+
+{% endblock %}
